@@ -1,0 +1,7 @@
+yap("on skibidi")
+
+yes = noCap
+
+chatIsThisReal yes:
+    yap("on sigma")
+
