@@ -1,7 +1,24 @@
+pullUp random ahh r
+
+skibidi gambling():
+    bet r.randint(1,100)
+
 yap("on skibidi")
 
 yes = noCap
+cooking = lethimcook("you may now cook ")
 
 chatIsThisReal yes:
     yap("on sigma")
+lowkey sus yes:
+    yap("what the skibidi")
+else:
+    yap("what the sigma")
 
+chatIsThisReal cooking == "real":
+    yap("ong")
+else:
+    yap("frfr")
+
+yap("gambling time")
+yap(f"gamble is {gambling()}")

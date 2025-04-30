@@ -36,7 +36,10 @@ keywords = {
     "aura": "and",
     "clapped": "break",
     "bet": "return",
-    "lowkey": "elif"
+    "lowkey": "elif",
+    "lethimcook": "input",
+    "fanumtax": "del",
+    "mog": "assert"
 }
 
 modifiedCode = []
