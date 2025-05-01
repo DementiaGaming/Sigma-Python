@@ -25,7 +25,7 @@ Python for Sigmas
 | except             | cringe           |
 | finally            | based            |
 | for                | grindset         |
-| from               |                  |
+| from               | bussin           |
 | global             | glaze            |
 | import             | pullup           |
 | in                 | lit              |
