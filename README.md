@@ -2,42 +2,42 @@
 Python for Sigmas
 
 # Keyword List
-|   Python   | Sigma Python     |
+| Python             | Sigma Python     |
 |:------------------:|:----------------:|
 | print              | yap              |
 | input              | lethimcook       |
 | False              | cap              |
-| None               |                  |
-| True               | noCap            |
+| None               | NPC              |
+| True               | nocap            |
 | and                | aura             |
 | as                 | ahh              |
 | assert             | mog              |
-| async              |                  |
-| await              |                  |
+| async              | thicc            |
+| await              | holup            |
 | break              | clapped          |
-| class              |                  |
+| class              | sigma            |
 | continue           | edge             |
 | def                | skibidi          |
 | del                | fanumtax         |
 | if                 | chatIsThisReal   |
 | elif               | lowkey           |
-| else               |                  |
-| except             |                  |
-| finally            |                  |
-| for                |                  |
+| else               | cooked           |
+| except             | cringe           |
+| finally            | based            |
+| for                | grindset         |
 | from               |                  |
-| global             |                  |
-| import             | pullUp           |
-| in                 |                  |
-| is                 |                  |
-| lambda             |                  |
-| nonlocal           |                  |
+| global             | glaze            |
+| import             | pullup           |
+| in                 | lit              |
+| is                 | deadass          |
+| lambda             | bop              |
+| nonlocal           | schizo           |
 | not                | sus              |
-| or                 |                  |
-| pass               |                  |
-| raise              |                  |
+| or                 | gyatt            |
+| pass               | bruh             |
+| raise              | crashout         |
 | return             | bet              |
-| try                |                  |
+| try                | lockin           |
 | while              | goon             |
-| with               |                  |
-| yield              |                  |
+| with               | pookie           |
+| yield              | rant             |

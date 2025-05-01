@@ -1,11 +1,25 @@
-pullUp random ahh r
+pullup random ahh r
 
 skibidi gambling():
     bet r.randint(1,100)
 
+sigma wClass:
+    skibidi __init__(self, name, auraLevel):
+        self.auraLevel = auraLevel
+        self.name = name
+    
+    skibidi wAura(self, amount):
+        self.auraLevel += amount
+
+    skibidi lAura(self, amount):
+        self.auraLevel -= amount
+
+    skibidi yapAura(self):
+        yap(f"{self.name} aura level: {self.auraLevel}")
+
 yap("on skibidi")
 
-yes = noCap
+yes = nocap
 cooking = lethimcook("you may now cook ")
 
 chatIsThisReal yes:
@@ -22,3 +36,11 @@ else:
 
 yap("gambling time")
 yap(f"gamble is {gambling()}")
+
+walterWhite = wClass("walter white", 10)
+
+walterWhite.yapAura()
+walterWhite.wAura(69)
+walterWhite.yapAura()
+walterWhite.lAura(9)
+walterWhite.yapAura()

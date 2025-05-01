@@ -28,10 +28,10 @@ keywords = {
     "goon": "while",
     "ahh": "as",
     "cap": False,
-    "noCap": True,
+    "nocap": True,
     "skibidi": "def",
     "edge": "continue",
-    "pullUp": "import",
+    "pullup": "import",
     "sus": "not",
     "aura": "and",
     "clapped": "break",
@@ -39,31 +39,44 @@ keywords = {
     "lowkey": "elif",
     "lethimcook": "input",
     "fanumtax": "del",
-    "mog": "assert"
+    "mog": "assert",
+    "sigma": "class",
+    "cooked": "else",
+    "grindset": "for",
+    "cringe": "except",
+    "based": "finally",
+    "crashout": "raise",
+    "bruh": "pass",
+    "gyatt": "or",
+    "deadass": "is",
+    "schizo": "nonlocal",
+    "lockin": "try",
+    "glaze": "global",
+    "lit": "in",
+    "thicc": "async",
+    "rant": "yield",
+    "pookie": "with",
+    "NPC": None,
+    "holup": "await",
+    "bop": "lambda",
+    "bussin": "from"
 }
 
-modifiedCode = []
-inputCodeIO = io.StringIO(inputCode)
+input_code_io = io.StringIO(inputCode)
+modified_tokens = []
 
-previousTokenEnd = 0
+for token in tokenize.generate_tokens(input_code_io.readline):
+    if token.type == tokenize.NAME and token.string in keywords:
+        replacement = str(keywords[token.string])
+        token = tokenize.TokenInfo(token.type, replacement, token.start, token.end, token.line)
+    modified_tokens.append(token)
 
-for token in tokenize.generate_tokens(inputCodeIO.readline):
-    currentToken = token.string
-    start, end = token.start, token.end
+# Write the converted Python code
+with open("output.py", "w") as out_file:
+    out_file.write(tokenize.untokenize(modified_tokens))
 
-    if start[1] > previousTokenEnd:
-        spaces = inputCode[previousTokenEnd:start[0]]
-        modifiedCode.append(" ")
+# Read and execute the output file
+with open("output.py", "r") as file:
+    code_in_file = file.read()
 
-    if token.type == tokenize.NAME:
-        if currentToken in keywords:
-            currentToken = str(keywords[currentToken])
-    
-    modifiedCode.append(currentToken)
-
-    previousTokenEnd = end[1]
-
-with open("output.py", "w") as file:
-    file.write("".join(modifiedCode))
-
-exec(compile("".join(modifiedCode), '<string>', 'exec'))
+exec(compile(code_in_file, '<string>', 'exec'))
